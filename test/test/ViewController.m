@@ -71,12 +71,14 @@
     switch (_choseSegment.selectedSegmentIndex) {
         case 0:
         {
+            // 打印指定cell中textField的值
             UITextField *textField = [_tableView1 getTextFieldWithRow:0 inSection:0];
             NSLog(@"%@",textField.text);
         }
             break;
         case 1:
         {
+            // 打印指定cell中textField的值
             UITextField *textField = [_tableView2 getTextFieldWithRow:1 inSection:0];
             NSLog(@"%@",textField.text);
         }
@@ -92,11 +94,13 @@
             _tableView1.hidden = NO;
             _tableView2.hidden = YES;
             _calButton.center = CGPointMake(x, y);
+            [self.view endEditing:YES];
             break;
         case 1:
             _tableView1.hidden = YES;
             _tableView2.hidden = NO;
             _calButton.center = CGPointMake(x, y + CELLHEIGHT);
+            [self.view endEditing:YES];
             break;
     }
 }
