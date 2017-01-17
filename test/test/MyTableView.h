@@ -12,12 +12,11 @@
 
 /** 创建MyTableView
  *
- *  index: xib中指定tableView所在的位数
+ *  index: xib中tableView所在的顺序
  *  owner: xib的File's owner;
- *  记得在xib中配置tableView的tag
  *
  */
-+ (instancetype)tableViewObjectAtIndex:(NSInteger)index owner:(id)owner width:(CGFloat)width;
++ (instancetype)tableViewWithIndex:(NSInteger)index owner:(id)owner width:(CGFloat)width;
 
 // 获取tableView自己中对应section的row的cell中的textField
 - (UITextField *)getTextFieldWithRow:(NSInteger)row inSection:(NSInteger)section;

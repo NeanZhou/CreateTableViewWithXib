@@ -55,8 +55,8 @@
 - (void)creatTableView
 {
     CGFloat w = _mainView.frame.size.width;
-    _tableView1 = [MyTableView tableViewObjectAtIndex:0 owner:self width:w];
-    _tableView2 = [MyTableView tableViewObjectAtIndex:1 owner:self width:w];
+    _tableView1 = [MyTableView tableViewWithIndex:0 owner:self width:w];
+    _tableView2 = [MyTableView tableViewWithIndex:1 owner:self width:w];
     _tableView2.hidden = YES;
     
     [_mainView addSubview:_tableView1];
@@ -117,15 +117,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *arr1 = @[@3, @1,];
-    NSArray *arr2 = @[@0, @3, @2];
-    MyTableViewCell *cell = [[MyTableViewCell alloc] init];
-    if (tableView.tag == 0) {
-        cell = [MyTableViewCell cellWithIndex:arr1[indexPath.row]];
-    }else {
-        cell = [MyTableViewCell cellWithIndex:arr2[indexPath.row]];
-    }
+    NSString *CellIdentifier = @"CellIdentifier";
+    MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    if (!cell) {
+        // 根据数组创建xib中指定的cell
+        NSArray *arr1 = @[@3, @1,];         // 创建xib中第4和第2个cell
+        NSArray *arr2 = @[@0, @3, @2];      // 创建xib中第1、第4和第3个cell
+        if (tableView.tag == 0) {
+            cell = [MyTableViewCell cellWithIndex:arr1[indexPath.row]];
+        }else {
+            cell = [MyTableViewCell cellWithIndex:arr2[indexPath.row]];
+        }
+    }
     return cell;
 }
 

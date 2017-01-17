@@ -12,8 +12,8 @@
 
 /** 创建MyTableViewCell
  *
- *  index: xib中指定tableViewCell所在的位数
- *  注意:   传入的index为NSString形式
+ *  index: xib中tableViewCell所在的顺序
+ *  注意:   传入的index为NSString形式(通常使用数组保存index)
  *
  */
 + (instancetype)cellWithIndex:(NSString *)index;

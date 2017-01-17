@@ -34,9 +34,10 @@
     self.scrollEnabled = NO;
 }
 
-+ (instancetype)tableViewObjectAtIndex:(NSInteger)index owner:(id)owner width:(CGFloat)width {
++ (instancetype)tableViewWithIndex:(NSInteger)index owner:(id)owner width:(CGFloat)width {
     NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"MyTableView" owner:owner options:nil];
     MyTableView *tableView = array[index];
+    tableView.tag = index;
     CGFloat w = width;
     CGFloat h =tableView.bounds.size.height;
     tableView.frame = CGRectMake(0, 0, w, h);
