@@ -1,9 +1,4 @@
-# ChangeTableViewsWithSegment
-使用segment来切换多个tableView，可分别通过Xib自定义tableView和cell。
-
-------
-
-
+# CreateTableViewWithXib
 
 > 自学iOS开发一段时间了，这也是第一次使用GitHub，所以有很多不足之处还希望大神们给予指导和帮助。
 >
@@ -11,52 +6,56 @@
 
 
 
-### 一、 项目简介
+### **重点推荐：NEANTableView**
 
-这是根据需要自己研究出来的，能简化segment切换不同的tableView的方式，轻松根据需要创建多个tableView并通过segment来切换。
+通过NEANTableView来创建诸如账号、密码、信息、邮箱等的输入窗口，只需在xib中可视化配置cell；
 
-### 二、 MyTableView
+简单几步，就能创建出想要的输入窗口。
 
-1. 通过xib来定义tableView外观.
+本示例项目使用segment来切换多个tableView。
 
-```objective-c
-/** 创建MyTableView
- *
- *  index: xib中tableView所在的顺序
- *  owner: xib的File's owner;
- *
- */
-+ (instancetype)tableViewWithIndex:(NSInteger)index owner:(id)owner width:(CGFloat)width;
-```
+------
 
-2. 轻松获取tableView中指定cell的textField
+### 一、 简介
 
-```objective-c
-- (UITextField *)getTextFieldWithRow:(NSInteger)row inSection:(NSInteger)section;
-```
+由于正在开发自己的第一个项目，遇到很多难题。于是研究封装了这个TableView:**NEANTableView**；
 
-### 三、 MyTableViewCell
+使用NEANTableView，不仅能方便创建输入框，而且能满足基本的使用需求。
 
-1. 通过xib来定义cell的外观
+ *      通过简单的配置，方便地用NEANTableView来构建[信息、账号、密码、邮箱]等各种输入窗口；
 
-```objective-c
-/** 创建MyTableViewCell
- *
- *  index: xib中tableViewCell所在的顺序
- *  注意:   传入的index为NSString形式(通常使用数组保存index)
- *
- */
-+ (instancetype)cellWithIndex:(NSString *)index;
-```
+ *      轻松在xib中配置tableView、添加cell、配置cell等操作；
 
-2. 轻松获取cell中的textField
+ *      按自己指定的顺序取出xib中的cell。
 
-```objective-c
-- (UITextField *)getTextFiled;
-```
+
+
+### 二、 使用方法
+
+ *      1. 将NEANTableView文件夹放入项目目录；
+
+ *      2. 在xib中配置tableView和cell。
+
+ *      3. 控制器中导入NEANTableView.h；(具体使用方法注释于NEANTableView.h中)
+
+
+
+### 三、 特性
+
+ *      1. 直接在xib中配置tableView；
+
+ *      2. 直接在xib中添加并配置cell，注意设置identifier以及适配布局；
+
+ *      3. 默认tableView不可滚动；
+
+ *      4. 默认tableView的高度由cell的高度以及个数决定,即高度 = (cell高度 * cell个数)，最高为屏幕高度；
+
+ *      5. 点击cell任意位置，cell内的textField自动响应；
+
+ *      6. 提供了获取指定cell中的textField的方法，从而轻松得到相应textField中的值。
 
 
 
 ------
 
-> 第一次的小项目基本就是这样了，希望大神们多给点指导，帮助我进步~谢谢！
+> 第一次的git基本就是这样了，希望大神们多给点指导，帮助我进步~谢谢！

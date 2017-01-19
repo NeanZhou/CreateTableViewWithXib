@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B8671341E2D14C700F4ABCB"
-               BuildableName = "test.app"
-               BlueprintName = "test"
-               ReferencedContainer = "container:test.xcodeproj">
+               BuildableName = "CreateTableViewWithXib.app"
+               BlueprintName = "CreateTableViewWithXib"
+               ReferencedContainer = "container:CreateTableViewWithXib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B86714D1E2D14C700F4ABCB"
-               BuildableName = "testTests.xctest"
-               BlueprintName = "testTests"
-               ReferencedContainer = "container:test.xcodeproj">
+               BuildableName = "CreateTableViewWithXibTests.xctest"
+               BlueprintName = "CreateTableViewWithXibTests"
+               ReferencedContainer = "container:CreateTableViewWithXib.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B8671581E2D14C700F4ABCB"
-               BuildableName = "testUITests.xctest"
-               BlueprintName = "testUITests"
-               ReferencedContainer = "container:test.xcodeproj">
+               BuildableName = "CreateTableViewWithXibUITests.xctest"
+               BlueprintName = "CreateTableViewWithXibUITests"
+               ReferencedContainer = "container:CreateTableViewWithXib.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B8671341E2D14C700F4ABCB"
-            BuildableName = "test.app"
-            BlueprintName = "test"
-            ReferencedContainer = "container:test.xcodeproj">
+            BuildableName = "CreateTableViewWithXib.app"
+            BlueprintName = "CreateTableViewWithXib"
+            ReferencedContainer = "container:CreateTableViewWithXib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B8671341E2D14C700F4ABCB"
-            BuildableName = "test.app"
-            BlueprintName = "test"
-            ReferencedContainer = "container:test.xcodeproj">
+            BuildableName = "CreateTableViewWithXib.app"
+            BlueprintName = "CreateTableViewWithXib"
+            ReferencedContainer = "container:CreateTableViewWithXib.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B8671341E2D14C700F4ABCB"
-            BuildableName = "test.app"
-            BlueprintName = "test"
-            ReferencedContainer = "container:test.xcodeproj">
+            BuildableName = "CreateTableViewWithXib.app"
+            BlueprintName = "CreateTableViewWithXib"
+            ReferencedContainer = "container:CreateTableViewWithXib.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
