@@ -27,9 +27,9 @@
 使用NEANTableView，不仅能方便创建输入框，而且能满足基本的使用需求。
 
 *	通过简单的配置，方便地用NEANTableView来构建[信息、账号、密码、邮箱]等各种输入窗口；
-*	轻松在xib中配置tableView、添加cell、配置cell等操作；
-*	按自己指定的顺序显示xib中的cell。
-*	例如：
+   *轻松在xib中配置tableView、添加cell、配置cell等操作；
+   *按自己指定的顺序显示xib中的cell。
+   *例如：
 
 ~~~objective-c
 // 创建tableView， xib中第3和第0个cell作为tableView的cell
@@ -68,6 +68,8 @@ NEANTableView *tableView = [NEANTableView tableViewWithCellsIndexArray:arr1 widt
 
 
 
+
+[ViewOnGitHub]: https://github.com/NeanZhou/CreateTableViewWithXib
 
 ------
 
