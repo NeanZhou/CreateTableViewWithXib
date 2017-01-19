@@ -21,8 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIButton               *calButton;
 
 // tableView
-@property (weak, nonatomic)          NEANTableView            *tableView1;
-@property (weak, nonatomic)          NEANTableView            *tableView2;
+@property (weak, nonatomic)          NEANTableView          *tableView1;
+@property (weak, nonatomic)          NEANTableView          *tableView2;
 
 @end
 
