@@ -17,7 +17,7 @@
 ### 一、 NEANTableView简介
 
 由于正在开发自己的第一个项目，遇到很多难题。于是研究封装了这个TableView:`NEANTableView`；
-使用NEANTableView，不仅能方便创建输入框，而且能满足基本的使用需求。
+使用NEANTableView，不仅能方便创建输入窗口，而且能满足基本的使用需求。
 
 *	通过简单的配置，方便地用NEANTableView来构建[信息、账号、密码、邮箱]等各种输入窗口；
 * 轻松在xib中配置tableView、添加cell、配置cell等操作；
