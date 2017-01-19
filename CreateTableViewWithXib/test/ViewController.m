@@ -55,13 +55,14 @@
 {
     CGFloat w = _mainView.frame.size.width;
     
-    // 创建xib中第1和第2个cell
+    // 创建tableView， xib中第1和第2个cell作为tableView的cell
     NSMutableArray *arr1 = [NSMutableArray arrayWithObjects:@0, @1, nil];
-    // 创建xib中第3和第4个cell
-    NSMutableArray *arr2 = [NSMutableArray arrayWithObjects:@2, @3, nil];
-    
     _tableView1 = [NEANTableView tableViewWithCellsIndexArray:arr1 width:w];
+    
+    // 创建tableView， xib中第3和第4个cell作为tableView的cell
+    NSMutableArray *arr2 = [NSMutableArray arrayWithObjects:@2, @3, nil];
     _tableView2 = [NEANTableView tableViewWithCellsIndexArray:arr2 width:w];
+
     _tableView1.tag = 0;
     _tableView2.tag = 1;
     _tableView2.hidden = YES;
@@ -82,7 +83,6 @@
         switch (_choseSegment.selectedSegmentIndex) {
         case 0:
         {
-            // 打印指定cell中textField的值
             UITextField *textField1 = [_tableView1 getTextFieldWithRow:0 inSection:0];
             UITextField *textField2 = [_tableView1 getTextFieldWithRow:1 inSection:0];
             alertMessage = [NSString stringWithFormat:@"账号是：%@\n密码是：%@", textField1.text, textField2.text];
@@ -90,19 +90,18 @@
             break;
         case 1:
         {
-            // 打印指定cell中textField的值
             UITextField *textField1 = [_tableView2 getTextFieldWithRow:0 inSection:0];
             UITextField *textField2 = [_tableView2 getTextFieldWithRow:1 inSection:0];
             alertMessage = [NSString stringWithFormat:@"邮箱是：%@\n手机是：%@", textField1.text, textField2.text];
         }
             break;
     }
+    
     // 弹出提示框
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"你好" message:alertMessage preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Thanks!" style:UIAlertActionStyleDefault handler:nil];
     [controller addAction:cancelAction];
     [self presentViewController:controller animated:YES completion:nil];
-
 }
 
 // segmentControl

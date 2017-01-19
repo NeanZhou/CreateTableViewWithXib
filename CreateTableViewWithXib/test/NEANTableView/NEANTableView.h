@@ -13,8 +13,8 @@
 
 /** 创建NEANTableView
  *
- *  array: xib中cell所在顺序的数组; 
- *         例如：想要按照第0、第2、第1的顺序加载xib中的cell，
+ *  array: 创建的tableView中的cell为xib中cell所在顺序的数组;
+ *         例如：创建的tableView想要显示xib中第0、第2、第1个cell，
  *         则array = [NSMutableArray arrayWithObjects:@0, @2, @1, nil];
  *  width: tableView的宽度
  *
