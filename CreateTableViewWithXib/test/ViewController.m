@@ -83,13 +83,16 @@
         switch (_choseSegment.selectedSegmentIndex) {
         case 0:
         {
-            UITextField *textField1 = [_tableView1 getTextFieldWithRow:0 inSection:0];
-            UITextField *textField2 = [_tableView1 getTextFieldWithRow:1 inSection:0];
+            // 使用 [-(NSArray *)getTextFields] 方法获取textField
+            NSArray *arr = [_tableView1 getTextFields];
+            UITextField *textField1 = arr[0];
+            UITextField *textField2 = arr[1];
             alertMessage = [NSString stringWithFormat:@"账号是：%@\n密码是：%@", textField1.text, textField2.text];
         }
             break;
         case 1:
         {
+            // 使用 [-(UITextField *)getTextFieldWithRow: inSection:] 获取textField
             UITextField *textField1 = [_tableView2 getTextFieldWithRow:0 inSection:0];
             UITextField *textField2 = [_tableView2 getTextFieldWithRow:1 inSection:0];
             alertMessage = [NSString stringWithFormat:@"邮箱是：%@\n手机是：%@", textField1.text, textField2.text];

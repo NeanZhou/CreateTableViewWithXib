@@ -15,7 +15,7 @@
  *  index: xib中tableViewCell所在的顺序
  *
  *  注意:   1. 传入的index为NSString形式(通常使用数组保存);
- *  注意:   2. 记得在xib中设置cell的identifier;
+ *  注意:   2. 记得在xib中设置cell的identifier，以便复用;
  *
  */
 + (instancetype)cellWithIndex:(NSString *)index;

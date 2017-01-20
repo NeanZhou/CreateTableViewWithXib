@@ -111,6 +111,19 @@
     return textField;
 }
 
+- (NSArray *)getTextFields {
+    NSMutableArray *arrM = [NSMutableArray array];
+    for (UITableViewCell *cell in self.arrWithCell) {
+        for (id obj in cell.contentView.subviews) {
+            if ([obj isKindOfClass:[UITextField class]]) {
+                [arrM addObject:obj];
+            }
+        }
+    }
+    NSArray *array = arrM;
+    return array;
+}
+
 #pragma mark - tableViewDelegate&dateSource
 // 设置行高，为xib中cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
