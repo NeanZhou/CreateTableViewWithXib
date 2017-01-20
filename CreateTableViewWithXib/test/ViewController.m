@@ -56,11 +56,11 @@
     CGFloat w = _mainView.frame.size.width;
     
     // 创建tableView， xib中第1和第2个cell作为tableView的cell
-    NSMutableArray *arr1 = [NSMutableArray arrayWithObjects:@0, @1, nil];
+    NSMutableArray *arr1 = [NSMutableArray arrayWithObjects:@0, @3, nil];
     _tableView1 = [NEANTableView tableViewWithCellsIndexArray:arr1 width:w];
     
     // 创建tableView， xib中第3和第4个cell作为tableView的cell
-    NSMutableArray *arr2 = [NSMutableArray arrayWithObjects:@2, @3, nil];
+    NSMutableArray *arr2 = [NSMutableArray arrayWithObjects:@2, @1, nil];
     _tableView2 = [NEANTableView tableViewWithCellsIndexArray:arr2 width:w];
 
     _tableView1.tag = 0;
