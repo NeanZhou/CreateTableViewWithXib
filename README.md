@@ -55,11 +55,9 @@
 #### 例如:
 
 1. 在xib中配置cell
-
    ![在NZTableViewCell.xib中配置cells](https://github.com/NeanZhou/Study-point/raw/master/Material%20Library/屏幕快照%202017-01-20%2014.26.05.png)
 
 2. 在控制器中创建NZTableView
-
    ~~~obj
    // 创建NZTableView， xib中第2、第1、第4个cell作为NZTableView的cell
    // width: tableView的宽度
@@ -69,15 +67,14 @@
    [self.view addSubview:tableView];
    ~~~
    
-3. 即可将制定的cells展示为窗口模式  
-
-   ![即可将制定的cells展示为窗口模式](https://raw.githubusercontent.com/NeanZhou/Study-point/master/Material%20Library/屏幕快照%202017-01-20%2014.33.56.png)
+3. 展示效果  
+   ![展示效果](https://raw.githubusercontent.com/NeanZhou/Study-point/master/Material%20Library/屏幕快照%202017-01-20%2014.33.56.png)
+   
+-----
+   
+<br>
 
   *`Easy enouph, right? If you like this, fork and share it! ^_^`*
-  
-----
-
-<br>
 
 `ViewOnMyGitHub:`[CreateTableViewWithXib](https://github.com/NeanZhou/CreateTableViewWithXib)
 
