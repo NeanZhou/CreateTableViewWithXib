@@ -67,7 +67,8 @@
    [self.view addSubview:tableView];
    ~~~
    
-3. 展示效果  
+3. 展示效果
+
    ![展示效果](https://raw.githubusercontent.com/NeanZhou/Study-point/master/Material%20Library/屏幕快照%202017-01-20%2014.33.56.png)
    
 -----
@@ -76,6 +77,6 @@
 
   *`Easy enouph, right? If you like this, fork and share it! ^_^`*
 
-`ViewOnMyGitHub:`[CreateTableViewWithXib](https://github.com/NeanZhou/CreateTableViewWithXib)
+#### ViewOnMyGitHub:[CreateTableViewWithXib](https://github.com/NeanZhou/CreateTableViewWithXib)
 
 > *算是正式跨界进入iOS开发啦，希望大家多给点指导，帮助我进步，谢谢!*
