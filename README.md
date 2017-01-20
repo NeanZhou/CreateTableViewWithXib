@@ -4,15 +4,15 @@
 >
 > 学iOS开发完全是因兴趣，发现还是挺有趣，尤其当自己解决了难题的时候，相当兴奋~    
 
-本实例项目使用segment来切换多个tableView  
+本示例项目使用segment来切换多个tableView  
 
 <br>
 
 ### 重点推荐：NEANTableView
 
-通过NEANTableView来创建诸如账号、密码、信息邮箱等的输入窗口，轻松在xib中布局cell，告别繁琐的代码和数据源设置；
+通过NEANTableView来创建诸如账号、密码、信息邮箱等的输入窗口，轻松在xib中配置cell；
 
-简单几步，就能创建出想要的输入窗口。
+简单几步，就能创建出想要的输入窗口，告别繁琐的代码和数据源设置。
 
 <br>
 
@@ -25,23 +25,36 @@
 由于正在开发自己的第一个项目，遇到很多难题。于是研究封装了这个TableView:`NEANTableVIew`；使用NEANTableView，能方便的创建输入窗口，应该能满足基本的使用需求。
 
 * 通过简单的配置，方便地用NEANTableView来构建[信息、账号、密码、邮箱]等各种输入窗口；
-* 轻松在xib中配置tableView、添加cell、配置cell等操作；告别繁琐的代码和数据源代理；
+
+* 轻松在xib中配置tableView，随意添加cell、配置cell等；告别繁琐的代码和数据源代理；
+
 * 简单几步就能创建想要的输入窗口。
+
 * 例如：
 
-~~~objective-c
-// 创建tableView， xib中第3和第0个cell作为tableView的cell
-NSMutableArray *arr1 = [NSMutableArray arrayWithObjects:@3, @0, nil];
-NEANTableView *tableView = [NEANTableView tableViewWithCellsIndexArray:arr1 width:w]; 
-// width: tableView的宽度
-~~~
+  1. 在xib中配置cell
+
+     ![在NZTableViewCell.xib中配置cells](/Users/nean/Desktop/屏幕快照 2017-01-20 14.26.05.png)
+
+  2. 在控制器中创建NZTableView
+
+     ~~~obj
+       // 创建tableView， xib中第2、第1、第4个cell作为tableView的cell
+       // width: tableView的宽度
+     NSMutableArray *arr = [NSMutableArray arrayWithObjects:@2, @1, @4, nil];
+     NZTableView *tableView = [NZTableView tableViewWithCellsIndexArray:arr width:w];[self.view addSubview:tableView];
+     ~~~
+
+     ![即可将制定的cells展示为窗口模式](/Users/nean/Desktop/屏幕快照 2017-01-20 14.33.56.png)
+
+
 
 <br>
 
 ### 二、 使用方法
 
 1. 将NEANTableView文件夹放入项目目录；
-2. 在xib中配置tableView和添加、设置cell等操作。
+2. 在xib中配置tableView, 添加、删除、设置cell。
 3. 控制器中导入NEANTableView.h；(具体使用方法注释于NEANTableView.h中)
 
 <br>
@@ -50,7 +63,7 @@ NEANTableView *tableView = [NEANTableView tableViewWithCellsIndexArray:arr1 widt
 
 1. 告别繁琐的代码和数据源代理；
 2. 直接在xib中配置tableView；
-3. 直接在xib中添加并配置cell，注意设置identifier以及适配布局；
+3. 直接在xib中添加、配置cell，注意设置identifier以及适配布局；不需再设置数据源代理。
 4. 默认tableView不可滚动；
 5. 默认tableView的高度由cell的高度以及个数决定,即高度 = (cell高度 * cell个数)，最高为屏幕高度；
 6. 点击cell任意位置，cell内的textField自动响应；

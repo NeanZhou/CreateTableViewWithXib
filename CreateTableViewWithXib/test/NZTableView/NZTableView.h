@@ -1,5 +1,5 @@
 //
-//  NEANTableView.h
+//  NZTableView.h
 //  test
 //
 //  Created by Nean on 2017/1/17.
@@ -9,18 +9,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NEANTableView : UITableView<UITableViewDelegate, UITableViewDataSource>
+@interface NZTableView : UITableView<UITableViewDelegate, UITableViewDataSource>
 
-/** 创建NEANTableView
+/** 创建NZTableView
  *
  *  array: 创建的tableView中的cell为xib中cell所在顺序的数组;
  *         例如：创建的tableView想要显示xib中第0、第2、第1个cell，
- *         则array = [NSMutableArray arrayWithObjects:@0, @2, @1, nil];
+ *         array = [NSMutableArray arrayWithObjects:@0, @2, @1, nil];
  *  width: tableView的宽度。
  *
- *  注意： 1. NEANTableView高度由cell的高度以及个数决定,即(cell高度 * cell个数)；
- *  注意： 2. 默认NEANTableView不可滚动;
- *  注意： 3. 记得在NEANTableViewCell.xib中设置cell的identifier，以便复用。
+ *  注意： 1. NZTableView高度由cell的高度以及个数决定,即(cell高度 * cell个数)；
+ *  注意： 2. 默认NZTableView不可滚动;
+ *  注意： 3. 记得在NZTableViewCell.xib中设置cell的identifier，以便复用。
  *
  */
 + (instancetype)tableViewWithCellsIndexArray:(NSMutableArray *)array width:(CGFloat)width;

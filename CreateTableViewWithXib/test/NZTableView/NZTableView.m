@@ -1,15 +1,15 @@
 //
-//  NEANTableView.m
+//  NZTableView.m
 //  test
 //
 //  Created by Nean on 2017/1/17.
 //  Copyright © 2017年 Nean. All rights reserved.
 //
 
-#import "NEANTableView.h"
-#import "NEANTableViewCell.h"
+#import "NZTableView.h"
+#import "NZTableViewCell.h"
 
-@interface NEANTableView ()
+@interface NZTableView ()
 
 @property (strong, nonatomic) NSMutableArray *arrObj;                 // 记录获取cell顺序的数组
 @property (strong, nonatomic) NSMutableArray *arrWithCell;            // 存放cell的数组
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation NEANTableView
+@implementation NZTableView
 
 #pragma mark - loadDate
 // 懒加载arrWithCell
@@ -29,7 +29,7 @@
         // 创建_arrObj中对应顺序的cell和CellIdentifier，
         // 分别放入_arrWithCell和_arrWithCellIdentifier中，
         for (NSString *str in _arrObj) {
-            NEANTableViewCell *cell = [NEANTableViewCell cellWithIndex:str];
+            NZTableViewCell *cell = [NZTableViewCell cellWithIndex:str];
             NSString *CellIdentifier = cell.reuseIdentifier;
             
             [_arrWithCell addObject:cell];
@@ -65,7 +65,7 @@
     
 }
 
-// 自定义NEANTableView样式
+// 自定义NZTableView样式
 - (void)setUp {
     self.layer.cornerRadius = 5;
     self.clipsToBounds = YES;
@@ -77,14 +77,14 @@
 #pragma mark - methods
 + (instancetype)tableViewWithCellsIndexArray:(NSMutableArray *)array width:(CGFloat)width {
     
-    NEANTableView *tableView = [[[NSBundle mainBundle] loadNibNamed:@"NEANTableView" owner:self options:nil] objectAtIndex:0];
+    NZTableView *tableView = [[[NSBundle mainBundle] loadNibNamed:@"NZTableView" owner:self options:nil] objectAtIndex:0];
     tableView.arrObj = array;
     tableView.delegate = tableView;
     tableView.dataSource = tableView;
     
     CGFloat w = width;
     CGFloat h = 0;
-    for (NEANTableViewCell *cell in tableView.arrWithCell) {
+    for (NZTableViewCell *cell in tableView.arrWithCell) {
         // 如果高度h大于屏幕高度，则 h = 屏幕高度，同时tableView可滚动。
         if (h < [UIScreen mainScreen].bounds.size.height) {
             h = cell.bounds.size.height + h;
@@ -127,7 +127,7 @@
 #pragma mark - tableViewDelegate&dateSource
 // 设置行高，为xib中cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NEANTableViewCell *cell = self.arrWithCell[indexPath.row];
+    NZTableViewCell *cell = self.arrWithCell[indexPath.row];
     return cell.bounds.size.height;
 }
 
@@ -139,7 +139,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *CellIdentifier = _arrWithCellIdentifier[indexPath.row];
-    NEANTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    NZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (!cell) {
         cell = self.arrWithCell[indexPath.row];
@@ -151,7 +151,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NEANTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NZTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     UITextField *textField = [cell getTextFiled];
     [textField becomeFirstResponder];
 }

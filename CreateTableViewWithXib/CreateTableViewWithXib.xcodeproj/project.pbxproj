@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B05A4041E31DC9C00CDCB5E /* NZTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B05A3FE1E31DC9C00CDCB5E /* NZTableView.m */; };
+		0B05A4051E31DC9C00CDCB5E /* NZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B05A4001E31DC9C00CDCB5E /* NZTableViewCell.m */; };
+		0B05A4061E31DC9C00CDCB5E /* NZTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B05A4021E31DC9C00CDCB5E /* NZTableView.xib */; };
+		0B05A4071E31DC9C00CDCB5E /* NZTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B05A4031E31DC9C00CDCB5E /* NZTableViewCell.xib */; };
 		0B8671531E2D14C700F4ABCB /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8671521E2D14C700F4ABCB /* testTests.m */; };
 		0B86715E1E2D14C700F4ABCB /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B86715D1E2D14C700F4ABCB /* testUITests.m */; };
 		0BE4D9BC1E30DFCC00E5AEEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4D9A61E30DFCC00E5AEEB /* AppDelegate.m */; };
@@ -14,10 +18,6 @@
 		0BE4D9BE1E30DFCC00E5AEEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE4D9A81E30DFCC00E5AEEB /* LaunchScreen.storyboard */; };
 		0BE4D9BF1E30DFCC00E5AEEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE4D9AA1E30DFCC00E5AEEB /* Main.storyboard */; };
 		0BE4D9C11E30DFCC00E5AEEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4D9AD1E30DFCC00E5AEEB /* main.m */; };
-		0BE4D9C41E30DFCC00E5AEEB /* NEANTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4D9B41E30DFCC00E5AEEB /* NEANTableView.m */; };
-		0BE4D9C51E30DFCC00E5AEEB /* NEANTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4D9B61E30DFCC00E5AEEB /* NEANTableViewCell.m */; };
-		0BE4D9C61E30DFCC00E5AEEB /* NEANTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE4D9B81E30DFCC00E5AEEB /* NEANTableView.xib */; };
-		0BE4D9C71E30DFCC00E5AEEB /* NEANTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE4D9B91E30DFCC00E5AEEB /* NEANTableViewCell.xib */; };
 		0BE4D9C81E30DFCC00E5AEEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4D9BB1E30DFCC00E5AEEB /* ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B05A3FC1E31DC9C00CDCB5E /* Introduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Introduction.h; sourceTree = "<group>"; };
+		0B05A3FD1E31DC9C00CDCB5E /* NZTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZTableView.h; sourceTree = "<group>"; };
+		0B05A3FE1E31DC9C00CDCB5E /* NZTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZTableView.m; sourceTree = "<group>"; };
+		0B05A3FF1E31DC9C00CDCB5E /* NZTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZTableViewCell.h; sourceTree = "<group>"; };
+		0B05A4001E31DC9C00CDCB5E /* NZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZTableViewCell.m; sourceTree = "<group>"; };
+		0B05A4021E31DC9C00CDCB5E /* NZTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NZTableView.xib; sourceTree = "<group>"; };
+		0B05A4031E31DC9C00CDCB5E /* NZTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NZTableViewCell.xib; sourceTree = "<group>"; };
 		0B8671351E2D14C700F4ABCB /* CreateTableViewWithXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreateTableViewWithXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B86714E1E2D14C700F4ABCB /* CreateTableViewWithXibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreateTableViewWithXibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8671521E2D14C700F4ABCB /* testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTests.m; sourceTree = "<group>"; };
@@ -53,13 +60,6 @@
 		0BE4D9AB1E30DFCC00E5AEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BE4D9AC1E30DFCC00E5AEEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BE4D9AD1E30DFCC00E5AEEB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0BE4D9B21E30DFCC00E5AEEB /* Introduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Introduction.h; sourceTree = "<group>"; };
-		0BE4D9B31E30DFCC00E5AEEB /* NEANTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEANTableView.h; sourceTree = "<group>"; };
-		0BE4D9B41E30DFCC00E5AEEB /* NEANTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEANTableView.m; sourceTree = "<group>"; };
-		0BE4D9B51E30DFCC00E5AEEB /* NEANTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEANTableViewCell.h; sourceTree = "<group>"; };
-		0BE4D9B61E30DFCC00E5AEEB /* NEANTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEANTableViewCell.m; sourceTree = "<group>"; };
-		0BE4D9B81E30DFCC00E5AEEB /* NEANTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEANTableView.xib; sourceTree = "<group>"; };
-		0BE4D9B91E30DFCC00E5AEEB /* NEANTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEANTableViewCell.xib; sourceTree = "<group>"; };
 		0BE4D9BA1E30DFCC00E5AEEB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0BE4D9BB1E30DFCC00E5AEEB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +89,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B05A3FB1E31DC9C00CDCB5E /* NZTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0B05A3FC1E31DC9C00CDCB5E /* Introduction.h */,
+				0B05A3FD1E31DC9C00CDCB5E /* NZTableView.h */,
+				0B05A3FE1E31DC9C00CDCB5E /* NZTableView.m */,
+				0B05A3FF1E31DC9C00CDCB5E /* NZTableViewCell.h */,
+				0B05A4001E31DC9C00CDCB5E /* NZTableViewCell.m */,
+				0B05A4011E31DC9C00CDCB5E /* xib */,
+			);
+			path = NZTableView;
+			sourceTree = "<group>";
+		};
+		0B05A4011E31DC9C00CDCB5E /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				0B05A4021E31DC9C00CDCB5E /* NZTableView.xib */,
+				0B05A4031E31DC9C00CDCB5E /* NZTableViewCell.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
 		0B86712C1E2D14C600F4ABCB = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +152,7 @@
 		0BE4D9A41E30DFCC00E5AEEB /* test */ = {
 			isa = PBXGroup;
 			children = (
-				0BE4D9B11E30DFCC00E5AEEB /* NEANTableView */,
+				0B05A3FB1E31DC9C00CDCB5E /* NZTableView */,
 				0BE4D9A51E30DFCC00E5AEEB /* AppDelegate.h */,
 				0BE4D9A61E30DFCC00E5AEEB /* AppDelegate.m */,
 				0BE4D9A71E30DFCC00E5AEEB /* Assets.xcassets */,
@@ -142,28 +164,6 @@
 				0BE4D9BB1E30DFCC00E5AEEB /* ViewController.m */,
 			);
 			path = test;
-			sourceTree = "<group>";
-		};
-		0BE4D9B11E30DFCC00E5AEEB /* NEANTableView */ = {
-			isa = PBXGroup;
-			children = (
-				0BE4D9B21E30DFCC00E5AEEB /* Introduction.h */,
-				0BE4D9B31E30DFCC00E5AEEB /* NEANTableView.h */,
-				0BE4D9B41E30DFCC00E5AEEB /* NEANTableView.m */,
-				0BE4D9B51E30DFCC00E5AEEB /* NEANTableViewCell.h */,
-				0BE4D9B61E30DFCC00E5AEEB /* NEANTableViewCell.m */,
-				0BE4D9B71E30DFCC00E5AEEB /* xib */,
-			);
-			path = NEANTableView;
-			sourceTree = "<group>";
-		};
-		0BE4D9B71E30DFCC00E5AEEB /* xib */ = {
-			isa = PBXGroup;
-			children = (
-				0BE4D9B81E30DFCC00E5AEEB /* NEANTableView.xib */,
-				0BE4D9B91E30DFCC00E5AEEB /* NEANTableViewCell.xib */,
-			);
-			path = xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE4D9BF1E30DFCC00E5AEEB /* Main.storyboard in Resources */,
-				0BE4D9C61E30DFCC00E5AEEB /* NEANTableView.xib in Resources */,
-				0BE4D9C71E30DFCC00E5AEEB /* NEANTableViewCell.xib in Resources */,
+				0B05A4071E31DC9C00CDCB5E /* NZTableViewCell.xib in Resources */,
 				0BE4D9BD1E30DFCC00E5AEEB /* Assets.xcassets in Resources */,
 				0BE4D9BE1E30DFCC00E5AEEB /* LaunchScreen.storyboard in Resources */,
+				0B05A4061E31DC9C00CDCB5E /* NZTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +304,8 @@
 				0BE4D9C81E30DFCC00E5AEEB /* ViewController.m in Sources */,
 				0BE4D9C11E30DFCC00E5AEEB /* main.m in Sources */,
 				0BE4D9BC1E30DFCC00E5AEEB /* AppDelegate.m in Sources */,
-				0BE4D9C41E30DFCC00E5AEEB /* NEANTableView.m in Sources */,
-				0BE4D9C51E30DFCC00E5AEEB /* NEANTableViewCell.m in Sources */,
+				0B05A4041E31DC9C00CDCB5E /* NZTableView.m in Sources */,
+				0B05A4051E31DC9C00CDCB5E /* NZTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

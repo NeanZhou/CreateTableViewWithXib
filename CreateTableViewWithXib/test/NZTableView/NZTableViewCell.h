@@ -1,5 +1,5 @@
 //
-//  NEANTableViewCell.h
+//  NZTableViewCell.h
 //  test
 //
 //  Created by Nean on 2017/1/16.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NEANTableViewCell : UITableViewCell
+@interface NZTableViewCell : UITableViewCell
 
-/** 创建NEANTableViewCell
+/** 创建NZTableViewCell
  *
  *  index: xib中tableViewCell所在的顺序
  *

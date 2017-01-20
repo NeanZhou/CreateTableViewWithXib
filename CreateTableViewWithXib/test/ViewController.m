@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NEANTableView.h"
+#import "NZTableView.h"
 
 #define SCREEN_WIDTH     [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT    [UIScreen mainScreen].bounds.size.height
@@ -21,8 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIButton               *calButton;
 
 // tableView
-@property (weak, nonatomic)          NEANTableView          *tableView1;
-@property (weak, nonatomic)          NEANTableView          *tableView2;
+@property (weak, nonatomic)          NZTableView          *tableView1;
+@property (weak, nonatomic)          NZTableView          *tableView2;
 
 @end
 
@@ -55,13 +55,13 @@
 {
     CGFloat w = _mainView.frame.size.width;
     
-    // 创建tableView， xib中第1和第2个cell作为tableView的cell
+    // 创建tableView， xib中第0、第3个cell作为tableView的cell
     NSMutableArray *arr1 = [NSMutableArray arrayWithObjects:@0, @3, nil];
-    _tableView1 = [NEANTableView tableViewWithCellsIndexArray:arr1 width:w];
+    _tableView1 = [NZTableView tableViewWithCellsIndexArray:arr1 width:w];
     
-    // 创建tableView， xib中第3和第4个cell作为tableView的cell
-    NSMutableArray *arr2 = [NSMutableArray arrayWithObjects:@2, @1, nil];
-    _tableView2 = [NEANTableView tableViewWithCellsIndexArray:arr2 width:w];
+    // 创建tableView， xib中第2、第1、第4个cell作为tableView的cell
+    NSMutableArray *arr2 = [NSMutableArray arrayWithObjects:@2, @1, @4, nil];
+    _tableView2 = [NZTableView tableViewWithCellsIndexArray:arr2 width:w];
 
     _tableView1.tag = 0;
     _tableView2.tag = 1;
