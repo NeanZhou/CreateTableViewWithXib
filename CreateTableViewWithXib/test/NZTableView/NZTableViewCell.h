@@ -10,7 +10,7 @@
 
 @interface NZTableViewCell : UITableViewCell
 
-/** 创建NZTableViewCell
+/** 创建NZTableViewCell **
  *
  *  index: xib中tableViewCell所在的顺序
  *

@@ -11,7 +11,7 @@
 
 @interface NZTableView : UITableView<UITableViewDelegate, UITableViewDataSource>
 
-/** 创建NZTableView
+/** 创建NZTableView **
  *
  *  array: 创建的tableView中的cell为xib中cell所在顺序的数组;
  *         例如：创建的tableView想要显示xib中第0、第2、第1个cell，

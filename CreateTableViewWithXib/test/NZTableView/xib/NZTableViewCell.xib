@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rt6-g0-lXT">
-                        <rect key="frame" x="18" y="8" width="133" height="27.5"/>
+                        <rect key="frame" x="18" y="8" width="133" height="27.666666666666664"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="133" id="Oau-vp-UgK"/>
                         </constraints>
@@ -29,7 +29,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="第0个cell" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K3n-ph-OoL">
-                        <rect key="frame" x="161" y="6" width="139" height="30.5"/>
+                        <rect key="frame" x="161" y="6" width="139" height="30.666666666666664"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
@@ -55,21 +55,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-6u-VBE">
-                        <rect key="frame" x="18" y="8" width="133" height="63.5"/>
+                        <rect key="frame" x="18" y="8" width="133" height="63.666666666666671"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="133" id="8Xm-eE-G7K"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="第1个cell" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4VZ-a2-BGD">
-                        <rect key="frame" x="161" y="6" width="139" height="66.5"/>
+                        <rect key="frame" x="161" y="6" width="139" height="66.666666666666671"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     </textField>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.61175614420000002" blue="0.5699133944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="M1S-6u-VBE" firstAttribute="leading" secondItem="1zv-30-oWM" secondAttribute="leadingMargin" constant="10" id="IDE-i2-c9W"/>
                     <constraint firstItem="4VZ-a2-BGD" firstAttribute="leading" secondItem="M1S-6u-VBE" secondAttribute="trailing" constant="10" id="Neb-KO-x88"/>
@@ -95,7 +96,7 @@
                             <constraint firstAttribute="width" constant="133" id="yjz-2K-rY4"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="第2个cell" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jim-0J-E20">
@@ -105,6 +106,7 @@
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.62792968469999999" blue="0.40043249149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="g9r-Hu-G6c" secondAttribute="bottom" id="82Y-dz-qXd"/>
                     <constraint firstItem="g9r-Hu-G6c" firstAttribute="leading" secondItem="JNk-iC-aVX" secondAttribute="leadingMargin" constant="10" id="HKD-HE-jHl"/>
@@ -125,7 +127,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTN-U2-gdf">
-                        <rect key="frame" x="18" y="8" width="133" height="27.5"/>
+                        <rect key="frame" x="18" y="8" width="133" height="27.666666666666664"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="133" id="OS4-9P-yCv"/>
                         </constraints>
@@ -134,7 +136,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="第3个cell" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZc-zC-ciB">
-                        <rect key="frame" x="161" y="6" width="139" height="30.5"/>
+                        <rect key="frame" x="161" y="6" width="139" height="30.666666666666664"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -150,7 +152,7 @@
                     <constraint firstAttribute="trailing" secondItem="LZc-zC-ciB" secondAttribute="trailing" constant="20" id="sS7-0S-Wjl"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="9" y="-95"/>
+            <point key="canvasLocation" x="9" y="-102"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell-Introduction" rowHeight="242" id="CgN-OU-ZoD" customClass="NZTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
@@ -160,24 +162,33 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krn-yf-eht">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="105.66666666666667"/>
                         <attributedString key="attributedText">
                             <fragment>
                                 <string key="content">.
 .
 .
 
-可随意添加、配置或删除cell
+可随意添加、配置或删除cell</string>
+                                <attributes>
+                                    <color key="NSColor" red="0.25636277428782284" green="0.27698755008989434" blue="0.28875890544041449" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment>
+                                <string key="content" base64-UTF8="YES">
+Cg
 </string>
                                 <attributes>
-                                    <color key="NSColor" red="1" green="0.36500826567133049" blue="0.42018244150364925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="NSColor" red="0.62422838438231276" green="0.67608750262971939" blue="0.69952234455958551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
                             <fragment content="记得设置identifier">
                                 <attributes>
-                                    <color key="NSColor" red="0.62422838438231276" green="0.67608750262971939" blue="0.69952234455958551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="NSColor" red="0.23072054099242562" green="0.38086698897104815" blue="0.92100469559585496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
@@ -186,6 +197,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.76160572922191538" blue="0.43842315338116022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Krn-yf-eht" secondAttribute="trailing" id="CbB-GZ-bdr"/>
                     <constraint firstItem="Krn-yf-eht" firstAttribute="top" secondItem="aoc-eR-veA" secondAttribute="top" id="G4X-CQ-caI"/>

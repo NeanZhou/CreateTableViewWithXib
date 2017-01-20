@@ -95,7 +95,7 @@
             // 使用 [-(UITextField *)getTextFieldWithRow: inSection:] 获取textField
             UITextField *textField1 = [_tableView2 getTextFieldWithRow:0 inSection:0];
             UITextField *textField2 = [_tableView2 getTextFieldWithRow:1 inSection:0];
-            alertMessage = [NSString stringWithFormat:@"邮箱是：%@\n手机是：%@", textField1.text, textField2.text];
+            alertMessage = [NSString stringWithFormat:@"邮箱是：%@\n手机号是：%@", textField1.text, textField2.text];
         }
             break;
     }
