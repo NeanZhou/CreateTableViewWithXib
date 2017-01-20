@@ -8,54 +8,35 @@
 
 <br>
 
-### 重点推荐：NEANTableView
+### 重点推荐：NZTableView
 
-通过NEANTableView来创建诸如账号、密码、信息邮箱等的输入窗口，轻松在xib中配置cell；
+通过NZTableView来创建诸如账号、密码、信息邮箱等的输入窗口，轻松在xib中配置cell；
 
 简单几步，就能创建出想要的输入窗口，告别繁琐的代码和数据源设置。
 
 <br>
 
-*如果您觉得好用，请给予支持，也可以分享给朋友哦，希望NEANTableView能给大家带来便利！*
+*如果您觉得好用，请给予支持，也可以分享给朋友哦，希望NZTableView能给大家带来便利！*
 
 ----
 
-### 一、 NEANTableView简介
+### 一、 NZTableView简介
 
-由于正在开发自己的第一个项目，遇到很多难题。于是研究封装了这个TableView:`NEANTableVIew`；使用NEANTableView，能方便的创建输入窗口，应该能满足基本的使用需求。
+由于正在开发自己的第一个项目，遇到很多难题。于是研究封装了这个TableView:`NZTableView`；使用NZTableView，能方便的创建输入窗口，应该能满足基本的使用需求。
 
-* 通过简单的配置，方便地用NEANTableView来构建[信息、账号、密码、邮箱]等各种输入窗口；
+* 通过简单的配置，方便地用NZTableView来构建[信息、账号、密码、邮箱]等各种输入窗口；
 
 * 轻松在xib中配置tableView，随意添加cell、配置cell等；告别繁琐的代码和数据源代理；
 
 * 简单几步就能创建想要的输入窗口。
 
-* 例如：
-
-  1. 在xib中配置cell
-
-     ![在NZTableViewCell.xib中配置cells](/Users/nean/Desktop/屏幕快照 2017-01-20 14.26.05.png)
-
-  2. 在控制器中创建NZTableView
-
-     ~~~obj
-       // 创建tableView， xib中第2、第1、第4个cell作为tableView的cell
-       // width: tableView的宽度
-     NSMutableArray *arr = [NSMutableArray arrayWithObjects:@2, @1, @4, nil];
-     NZTableView *tableView = [NZTableView tableViewWithCellsIndexArray:arr width:w];[self.view addSubview:tableView];
-     ~~~
-
-     ![即可将制定的cells展示为窗口模式](/Users/nean/Desktop/屏幕快照 2017-01-20 14.33.56.png)
-
-
-
 <br>
 
 ### 二、 使用方法
 
-1. 将NEANTableView文件夹放入项目目录；
+1. 将NZTableView文件夹放入项目目录；
 2. 在xib中配置tableView, 添加、删除、设置cell。
-3. 控制器中导入NEANTableView.h；(具体使用方法注释于NEANTableView.h中)
+3. 控制器中导入NZTableView.h；(具体使用方法注释于NZTableView.h中)
 
 <br>
 
@@ -69,10 +50,35 @@
 6. 点击cell任意位置，cell内的textField自动响应；
 7. 提供了获取指定cell中的textField的方法，从而轻松得到相应textField中的值。
 
+<br>
+
+#### 例如:
+
+1. 在xib中配置cell
+
+   ![在NZTableViewCell.xib中配置cells](https://github.com/NeanZhou/Study-point/raw/master/Material%20Library/屏幕快照%202017-01-20%2014.26.05.png)
+
+2. 在控制器中创建NZTableView
+
+   ~~~obj
+   // 创建NZTableView， xib中第2、第1、第4个cell作为NZTableView的cell
+   // width: tableView的宽度
+   
+   NSMutableArray *arr = [NSMutableArray arrayWithObjects:@2, @1, @4, nil];
+   NZTableView *tableView = [NZTableView tableViewWithCellsIndexArray:arr width:w];
+   [self.view addSubview:tableView];
+   ~~~
+   
+3. 即可将制定的cells展示为窗口模式  
+
+   ![即可将制定的cells展示为窗口模式](https://raw.githubusercontent.com/NeanZhou/Study-point/master/Material%20Library/屏幕快照%202017-01-20%2014.33.56.png)
+
+  *`Easy enouph, right? If you like this, fork and share it! ^_^`*
+  
 ----
 
 <br>
 
 `ViewOnMyGitHub:`[CreateTableViewWithXib](https://github.com/NeanZhou/CreateTableViewWithXib)
 
-> 算是正式跨界进入iOS开发啦，希望大家多给点指导，帮助我进步，谢谢
+> *算是正式跨界进入iOS开发啦，希望大家多给点指导，帮助我进步，谢谢!*
