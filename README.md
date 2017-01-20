@@ -69,7 +69,7 @@
    
 3. 展示效果
 
-   ![展示效果](http://wx3.sinaimg.cn/large/7c1e9369gy1fbxj4eyugsg20ir0dwkjo.gif)
+   ![展示效果](http://wx2.sinaimg.cn/large/7c1e9369gy1fbxkrwmvwgg20970gu0zl.gif)
    
 -----
    
