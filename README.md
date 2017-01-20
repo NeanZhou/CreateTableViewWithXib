@@ -59,10 +59,10 @@
 
 2. 在控制器中创建NZTableView
    ~~~obj
-   // 创建NZTableView， xib中第2、第1、第4个cell作为NZTableView的cell
+   // 创建NZTableView， xib中第0、第3、第4个cell作为NZTableView的cell
    // width: tableView的宽度
    
-   NSMutableArray *arr = [NSMutableArray arrayWithObjects:@2, @1, @4, nil];
+   NSMutableArray *arr = [NSMutableArray arrayWithObjects:@0, @3, @4, nil];
    NZTableView *tableView = [NZTableView tableViewWithCellsIndexArray:arr width:w];
    [self.view addSubview:tableView];
    ~~~
