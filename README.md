@@ -55,7 +55,7 @@
 #### 例如:
 
 1. 在xib中配置cell
-   ![在NZTableViewCell.xib中配置cells](https://github.com/NeanZhou/Study-point/raw/master/Material%20Library/屏幕快照%202017-01-20%2014.26.05.png)
+   ![在NZTableViewCell.xib中配置cells](http://wx2.sinaimg.cn/large/7c1e9369gy1fbxj437506j20zk0klqbo.jpg)
 
 2. 在控制器中创建NZTableView
    ~~~obj
@@ -69,7 +69,7 @@
    
 3. 展示效果
 
-   ![展示效果](https://raw.githubusercontent.com/NeanZhou/Study-point/master/Material%20Library/屏幕快照%202017-01-20%2014.33.56.png)
+   ![展示效果](http://wx3.sinaimg.cn/large/7c1e9369gy1fbxj4eyugsg20ir0dwkjo.gif)
    
 -----
    
