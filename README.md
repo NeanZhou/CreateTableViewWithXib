@@ -55,20 +55,20 @@
 #### 例如:
 
 1. 在xib中配置cell
-      ![在NZTableViewCell.xib中配置cells](http://wx2.sinaimg.cn/large/7c1e9369gy1fbxj437506j20zk0klqbo.jpg)
+    ![在NZTableViewCell.xib中配置cells](http://wx2.sinaimg.cn/large/7c1e9369gy1fbxj437506j20zk0klqbo.jpg)
 
 2. 在控制器中创建NZTableView
-   ~~~obj
-   // 创建NZTableView， xib中第2、第1、第4个cell作为NZTableView的cell
-   // width: tableView的宽度
 
-      NSMutableArray *arr = [NSMutableArray arrayWithObjects:@2, @1, @4, nil];
-      NZTableView *tableView = [NZTableView tableViewWithCellsIndexArray:arr width:w];
-      [self.view addSubview:tableView];
-   ~~~
-
-
-
+    ```objective-c
+    
+    // 创建NZTableView， xib中第2、第1、第4个cell作为NZTableView的cell
+    // width: tableView的宽度
+       NSMutableArray *arr = [NSMutableArray arrayWithObjects:@2, @1, @4, nil];
+       NZTableView *tableView = [NZTableView tableViewWithCellsIndexArray:arr width:w];
+       [self.view addSubview:tableView];
+       
+    ```
+    
 3. 展示效果
 
    ![](http://wx1.sinaimg.cn/large/7c1e9369gy1fbxlavkd8gg20970gu0zl.gif)
