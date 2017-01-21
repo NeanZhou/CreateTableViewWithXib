@@ -59,7 +59,7 @@
 
 2. 在控制器中创建NZTableView
 
-    ```objective-c
+    ```
     
     // 创建NZTableView， xib中第2、第1、第4个cell作为NZTableView的cell
     // width: tableView的宽度
